@@ -13,5 +13,3 @@ const currentTimeOfVideo = localStorage.getItem("videoplayer-current-time");
 (currentTimeOfVideo) ? player.setCurrentTime(currentTimeOfVideo) : null;
 
 player.on('timeupdate', throttle(onPlay, 1000));
-
-localStorage.clear();
